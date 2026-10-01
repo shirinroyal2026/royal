@@ -9,6 +9,10 @@ export default defineConfig({
     assets: { notFoundHandling: "none" },
     env: {
       ASSETS: bindings.assets(),
+      APARTMENT_DB: bindings.d1({
+        name: "apartment-db",
+        id: "c9fc1326-25d3-468a-a6bd-42f75b8e6509",
+      }),
     },
   }),
 });
